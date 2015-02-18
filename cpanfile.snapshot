@@ -1,0 +1,192 @@
+# carton snapshot format: version 1.0
+DISTRIBUTIONS
+  Data-OptList-0.109
+    pathname: R/RJ/RJBS/Data-OptList-0.109.tar.gz
+    provides:
+      Data::OptList 0.109
+    requirements:
+      ExtUtils::MakeMaker 6.30
+      List::Util 0
+      Params::Util 0
+      Sub::Install 0.921
+      strict 0
+      warnings 0
+  Data-Section-0.200006
+    pathname: R/RJ/RJBS/Data-Section-0.200006.tar.gz
+    provides:
+      Data::Section 0.200006
+    requirements:
+      Encode 0
+      ExtUtils::MakeMaker 6.30
+      MRO::Compat 0.09
+      Sub::Exporter 0.979
+      strict 0
+      warnings 0
+  Dir-Self-0.11
+    pathname: M/MA/MAUKE/Dir-Self-0.11.tar.gz
+    provides:
+      Dir::Self 0.11
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.48
+      File::Spec 0
+      strict 0
+  ExtUtils-Config-0.008
+    pathname: L/LE/LEONT/ExtUtils-Config-0.008.tar.gz
+    provides:
+      ExtUtils::Config 0.008
+    requirements:
+      Data::Dumper 0
+      ExtUtils::MakeMaker 6.30
+      strict 0
+      warnings 0
+  ExtUtils-Helpers-0.022
+    pathname: L/LE/LEONT/ExtUtils-Helpers-0.022.tar.gz
+    provides:
+      ExtUtils::Helpers 0.022
+      ExtUtils::Helpers::Unix 0.022
+      ExtUtils::Helpers::VMS 0.022
+      ExtUtils::Helpers::Windows 0.022
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.30
+      File::Basename 0
+      File::Copy 0
+      File::Spec::Functions 0
+      Module::Load 0
+      Text::ParseWords 3.24
+      strict 0
+      warnings 0
+  ExtUtils-InstallPaths-0.011
+    pathname: L/LE/LEONT/ExtUtils-InstallPaths-0.011.tar.gz
+    provides:
+      ExtUtils::InstallPaths 0.011
+    requirements:
+      Carp 0
+      ExtUtils::Config 0.002
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      perl 5.006
+      strict 0
+      warnings 0
+  MRO-Compat-0.12
+    pathname: B/BO/BOBTFISH/MRO-Compat-0.12.tar.gz
+    provides:
+      MRO::Compat 0.12
+    requirements:
+      ExtUtils::MakeMaker 6.59
+      Test::More 0.47
+      perl 5.006
+  Module-Build-Tiny-0.039
+    pathname: L/LE/LEONT/Module-Build-Tiny-0.039.tar.gz
+    provides:
+      Module::Build::Tiny 0.039
+    requirements:
+      CPAN::Meta 0
+      DynaLoader 0
+      Exporter 5.57
+      ExtUtils::CBuilder 0
+      ExtUtils::Config 0.003
+      ExtUtils::Helpers 0.020
+      ExtUtils::Install 0
+      ExtUtils::InstallPaths 0.002
+      ExtUtils::ParseXS 0
+      File::Basename 0
+      File::Find 0
+      File::Path 0
+      File::Spec::Functions 0
+      Getopt::Long 2.36
+      JSON::PP 2
+      Pod::Man 0
+      TAP::Harness::Env 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Params-Util-1.07
+    pathname: A/AD/ADAMK/Params-Util-1.07.tar.gz
+    provides:
+      Params::Util 1.07
+    requirements:
+      ExtUtils::CBuilder 0.27
+      ExtUtils::MakeMaker 6.52
+      File::Spec 0.80
+      Scalar::Util 1.18
+      Test::More 0.42
+      perl 5.00503
+  Software-License-0.103010
+    pathname: R/RJ/RJBS/Software-License-0.103010.tar.gz
+    provides:
+      Software::License 0.103010
+      Software::License::AGPL_3 0.103010
+      Software::License::Apache_1_1 0.103010
+      Software::License::Apache_2_0 0.103010
+      Software::License::Artistic_1_0 0.103010
+      Software::License::Artistic_2_0 0.103010
+      Software::License::BSD 0.103010
+      Software::License::CC0_1_0 0.103010
+      Software::License::Custom 0.103010
+      Software::License::FreeBSD 0.103010
+      Software::License::GFDL_1_2 0.103010
+      Software::License::GFDL_1_3 0.103010
+      Software::License::GPL_1 0.103010
+      Software::License::GPL_2 0.103010
+      Software::License::GPL_3 0.103010
+      Software::License::LGPL_2_1 0.103010
+      Software::License::LGPL_3_0 0.103010
+      Software::License::MIT 0.103010
+      Software::License::Mozilla_1_0 0.103010
+      Software::License::Mozilla_1_1 0.103010
+      Software::License::Mozilla_2_0 0.103010
+      Software::License::None 0.103010
+      Software::License::OpenSSL 0.103010
+      Software::License::Perl_5 0.103010
+      Software::License::PostgreSQL 0.103010
+      Software::License::QPL_1_0 0.103010
+      Software::License::SSLeay 0.103010
+      Software::License::Sun 0.103010
+      Software::License::Zlib 0.103010
+      Software::LicenseUtils 0.103010
+    requirements:
+      Carp 0
+      Data::Section 0
+      ExtUtils::MakeMaker 6.30
+      File::Spec 0
+      IO::Dir 0
+      Module::Load 0
+      Sub::Install 0
+      Text::Template 0
+      parent 0
+      strict 0
+      warnings 0
+  Sub-Exporter-0.987
+    pathname: R/RJ/RJBS/Sub-Exporter-0.987.tar.gz
+    provides:
+      Sub::Exporter 0.987
+      Sub::Exporter::Util 0.987
+    requirements:
+      Carp 0
+      Data::OptList 0.100
+      ExtUtils::MakeMaker 6.30
+      Params::Util 0.14
+      Sub::Install 0.92
+      strict 0
+      warnings 0
+  Sub-Install-0.928
+    pathname: R/RJ/RJBS/Sub-Install-0.928.tar.gz
+    provides:
+      Sub::Install 0.928
+    requirements:
+      B 0
+      Carp 0
+      ExtUtils::MakeMaker 6.30
+      Scalar::Util 0
+      strict 0
+      warnings 0
+  Text-Template-1.46
+    pathname: M/MJ/MJD/Text-Template-1.46.tar.gz
+    provides:
+      Text::Template 1.46
+      Text::Template::Preprocess 1.46
+    requirements:
+      ExtUtils::MakeMaker 0
