@@ -48,10 +48,22 @@
       },
       "test" : {
          "requires" : {
+            "Dir::Self" : "0.10",
             "Test::More" : "0.98"
          }
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/tadasy/pldotenv/issues"
+      },
+      "homepage" : "https://github.com/tadasy/pldotenv",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/tadasy/pldotenv.git",
+         "web" : "https://github.com/tadasy/pldotenv"
+      }
+   },
    "version" : "0.01"
 }

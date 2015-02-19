@@ -1,7 +1,7 @@
 use strict;
-use Test::More 0.98;
-use Dir::Self;
+use Test::More 0.98 tests =>6;
 use Data::Dumper;
+use FindBin;
 
 subtest 'use test.' => sub {
     use_ok $_ for qw(
@@ -11,7 +11,7 @@ subtest 'use test.' => sub {
 
 subtest 'file not found test.' => sub {
     eval {
-        Dotenv::load(__DIR__ . '/fixtures/.notfound');
+        Dotenv::load($FindBin::Bin . '/fixtures', '.notfound');
     };
     if ($@) {
         pass();
@@ -21,7 +21,13 @@ subtest 'file not found test.' => sub {
 };
 
 subtest 'basic test.' => sub {
-    Dotenv::load(__DIR__ . '/fixtures/', '.basic');
+    eval {
+        Dotenv::load($FindBin::Bin . '/fixtures', '.basic');
+    };
+    if ($@) {
+        fail($@);
+    }
+
     is $ENV{'key1'}, 'val1';
     is $ENV{'key2'}, 'val2';
     $ENV{'key1'} = undef;
@@ -29,19 +35,19 @@ subtest 'basic test.' => sub {
 };
 
 subtest 'defalut file name test.' => sub {
-    Dotenv::load(__DIR__ . '/fixtures/');
+    Dotenv::load($FindBin::Bin . '/fixtures');
     is $ENV{'key1'}, 'val1';
     $ENV{'key1'} = undef;
 };
 
 subtest 'space test.' => sub {
-    Dotenv::load(__DIR__ . '/fixtures/', '.space');
+    Dotenv::load($FindBin::Bin . '/fixtures', '.space');
     is $ENV{'key1'}, 'val1';
     $ENV{'key1'} = undef;
 };
 
 subtest 'comment test.' => sub {
-    Dotenv::load(__DIR__ . '/fixtures/', '.comment');
+    Dotenv::load($FindBin::Bin . '/fixtures', '.comment');
     is $ENV{'key1'}, 'val1';
     is $ENV{'key2'}, undef;
     $ENV{'key1'} = undef;

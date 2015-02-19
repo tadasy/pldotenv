@@ -13,6 +13,7 @@ sub load {
     my $file = shift;
     $file = '.env' unless defined $file;
 
+#    print "${path}/${file}";
     open(DATAFILE, "< ${path}/${file}") or croak($!);
 
     while (my $line = <DATAFILE>){
