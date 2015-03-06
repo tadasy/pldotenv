@@ -54,4 +54,14 @@ subtest 'comment test.' => sub {
     $ENV{'key2'} = undef;
 };
 
+subtest 'export test.' => sub {
+    Dotenv::load($FindBin::Bin . '/fixtures', '.export');
+    is $ENV{'key1'}, 'val1';
+    is $ENV{'key2'}, undef;
+    is $ENV{'key3'}, 'val3';
+    $ENV{'key1'} = undef;
+    $ENV{'key2'} = undef;
+    $ENV{'key3'} = undef;
+};
+
 done_testing;

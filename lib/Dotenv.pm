@@ -19,6 +19,7 @@ sub load {
     while (my $line = <DATAFILE>){
         chomp($line);
         next if ($line =~ /^#/);
+        $line =~ s/^export\s+//g;
         next unless ($line =~ /=/);
         my @data = split(/=/, $line);
         &setenv(@data);
